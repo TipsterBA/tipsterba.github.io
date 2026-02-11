@@ -32,56 +32,42 @@ src="https://www.facebook.com/tr?id=1624585545221325&ev=PageView&noscript=1"/>
   font-family: Arial, Helvetica, sans-serif;
 }
 
-html, body {
-  width: 100%;
-  height: 100%;
-}
-
 body {
   background: #cfe6a8;
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
-/* CONTENEDOR GENERAL */
 .container {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 20px;
 }
 
-/* TARJETA */
 .card {
   background: #ffffff;
-  width: 100%;
-  max-width: 95vw; /* 🔥 clave para móvil */
-  padding: 34px 24px;
-  border-radius: 20px;
+  max-width: 420px;
+  margin: auto;
+  padding: 30px 20px;
+  border-radius: 18px;
   text-align: center;
-  box-shadow: 0 14px 40px rgba(0,0,0,0.2);
 }
 
-/* LOGO */
 .logo {
-  max-width: 180px;
-  margin: 0 auto 16px auto;
-  display: block;
+  width: 110px;
+  margin-bottom: 20px;
 }
 
-/* TEXTOS */
 h1 {
-  font-size: 28px;
-  margin-bottom: 12px;
+  font-size: 26px;
+  margin-bottom: 14px;
   color: #111;
 }
 
 .subs {
   font-size: 22px;
   margin-bottom: 16px;
-  color: #333;
 }
 
 .highlight {
@@ -91,23 +77,22 @@ h1 {
 
 h2 {
   font-size: 30px;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 
 .arrow {
-  font-size: 38px;
-  margin-bottom: 22px;
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
-/* BOTÓN */
 .btn {
   display: block;
   background: #4f93ff;
-  color: #ffffff;
+  color: white;
   text-decoration: none;
-  padding: 18px;
-  border-radius: 35px;
-  font-size: 20px;
+  padding: 16px;
+  border-radius: 30px;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -115,38 +100,15 @@ h2 {
   background: #3a7de0;
 }
 
-/* TEXTO FALLBACK */
 .fallback {
   margin-top: 18px;
   font-size: 14px;
-  color: #444;
 }
 
 .fallback a {
   color: #4f93ff;
   font-weight: bold;
   text-decoration: none;
-}
-
-/* DESKTOP: se mantiene bien */
-@media (min-width: 768px) {
-  .card {
-    max-width: 560px;
-    padding: 40px 45px;
-  }
-
-  h1 {
-    font-size: 32px;
-  }
-
-  h2 {
-    font-size: 34px;
-  }
-
-  .btn {
-    font-size: 20px;
-    padding: 18px;
-  }
 }
 </style>
 </head>
