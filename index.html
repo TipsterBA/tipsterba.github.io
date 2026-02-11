@@ -33,11 +33,13 @@ src="https://www.facebook.com/tr?id=1624585545221325&ev=PageView&noscript=1"/>
 }
 
 body {
+  margin: 0;
   background: #cfe6a8;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 15px;
 }
 
 .container {
@@ -47,11 +49,21 @@ body {
 
 .card {
   background: #ffffff;
-  max-width: 500px;
+  width: 100%
+  max-width: 420px;
+
+  min-height: 90vh;
   margin: auto;
-  padding: 45px 35px 50px;
-  border-radius: 26px;
+  
+  border-radius: 28px;
+  padding: 40px 30px;
+  
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  box-shadow: 0 25px 50px rgba(0,0,0,0.2);
 }
 
 .logo {
