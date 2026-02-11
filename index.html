@@ -44,7 +44,7 @@ body {
   align-items: center;
 }
 
-/* CONTENEDOR */
+/* CONTENEDOR GENERAL */
 .container {
   width: 100%;
   display: flex;
@@ -57,14 +57,78 @@ body {
 .card {
   background: #ffffff;
   width: 100%;
-  max-width: 420px;
-  padding: 30px 22px;
-  border-radius: 18px;
+  max-width: 95vw; /* 🔥 clave para móvil */
+  padding: 34px 24px;
+  border-radius: 20px;
   text-align: center;
-  box-shadow: 0 12px 35px rgba(0,0,0,0.18);
+  box-shadow: 0 14px 40px rgba(0,0,0,0.2);
 }
 
-/* DESKTOP: tarjeta más grande */
+/* LOGO */
+.logo {
+  max-width: 180px;
+  margin: 0 auto 16px auto;
+  display: block;
+}
+
+/* TEXTOS */
+h1 {
+  font-size: 28px;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+.subs {
+  font-size: 22px;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.highlight {
+  font-size: 16px;
+  margin-bottom: 22px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 16px;
+}
+
+.arrow {
+  font-size: 38px;
+  margin-bottom: 22px;
+}
+
+/* BOTÓN */
+.btn {
+  display: block;
+  background: #4f93ff;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 18px;
+  border-radius: 35px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #3a7de0;
+}
+
+/* TEXTO FALLBACK */
+.fallback {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #444;
+}
+
+.fallback a {
+  color: #4f93ff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* DESKTOP: se mantiene bien */
 @media (min-width: 768px) {
   .card {
     max-width: 560px;
@@ -83,66 +147,6 @@ body {
     font-size: 20px;
     padding: 18px;
   }
-}
-
-.logo {
-  max-width: 180px;
-  margin: 0 auto 15px auto;
-  display: block;
-}
-
-h1 {
-  font-size: 26px;
-  margin-bottom: 12px;
-  color: #111;
-}
-
-.subs {
-  font-size: 22px;
-  margin-bottom: 16px;
-  color: #333;
-}
-
-.highlight {
-  font-size: 16px;
-  margin-bottom: 22px;
-}
-
-h2 {
-  font-size: 30px;
-  margin-bottom: 15px;
-}
-
-.arrow {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-.btn {
-  display: block;
-  background: #4f93ff;
-  color: #ffffff;
-  text-decoration: none;
-  padding: 16px;
-  border-radius: 30px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.btn:hover {
-  background: #3a7de0;
-}
-
-.fallback {
-  margin-top: 18px;
-  font-size: 14px;
-  color: #444;
-}
-
-.fallback a {
-  color: #4f93ff;
-  font-weight: bold;
-  text-decoration: none;
 }
 </style>
 </head>
@@ -164,192 +168,7 @@ h2 {
 
     <div class="arrow">⬇️</div>
 
-    <a 
-      href="https://t.me/+GMz9wjnvdehkODEx"
-      class="btn"
-      id="joinTelegram"
-      onclick="fbq('trackCustom', 'TelegramJoinClick')"
-      target="_blank"
-    >
-      UNIRSE AL CANAL DE TELEGRAM
-    </a>
-
-    <p class="fallback">
-      Si el botón no te dirige al canal,
-      <a href="https://t.me/+GMz9wjnvdehkODEx" target="_blank">haz clic aquí</a>
-    </p>
-
-  </div>
-</div>
-
-</body>
-</html><!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="facebook-domain-verification" content="wbl7g9839haefanv6a0bl9ujdlosp4" />
-<title>TIPSTER B.A | FREE</title>
-
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1624585545221325');
-fbq('track', 'PageView');
-</script>
-<noscript>
-<img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1624585545221325&ev=PageView&noscript=1"/>
-</noscript>
-<!-- End Meta Pixel Code -->
-
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-html, body {
-  width: 100%;
-  height: 100%;
-}
-
-body {
-  background: #cfe6a8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* CONTENEDOR */
-.container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-/* TARJETA */
-.card {
-  background: #ffffff;
-  width: 100%;
-  max-width: 420px;
-  padding: 30px 22px;
-  border-radius: 18px;
-  text-align: center;
-  box-shadow: 0 12px 35px rgba(0,0,0,0.18);
-}
-
-/* DESKTOP: tarjeta más grande */
-@media (min-width: 768px) {
-  .card {
-    max-width: 560px;
-    padding: 40px 45px;
-  }
-
-  h1 {
-    font-size: 32px;
-  }
-
-  h2 {
-    font-size: 34px;
-  }
-
-  .btn {
-    font-size: 20px;
-    padding: 18px;
-  }
-}
-
-.logo {
-  max-width: 180px;
-  margin: 0 auto 15px auto;
-  display: block;
-}
-
-h1 {
-  font-size: 26px;
-  margin-bottom: 12px;
-  color: #111;
-}
-
-.subs {
-  font-size: 22px;
-  margin-bottom: 16px;
-  color: #333;
-}
-
-.highlight {
-  font-size: 16px;
-  margin-bottom: 22px;
-}
-
-h2 {
-  font-size: 30px;
-  margin-bottom: 15px;
-}
-
-.arrow {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-.btn {
-  display: block;
-  background: #4f93ff;
-  color: #ffffff;
-  text-decoration: none;
-  padding: 16px;
-  border-radius: 30px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.btn:hover {
-  background: #3a7de0;
-}
-
-.fallback {
-  margin-top: 18px;
-  font-size: 14px;
-  color: #444;
-}
-
-.fallback a {
-  color: #4f93ff;
-  font-weight: bold;
-  text-decoration: none;
-}
-</style>
-</head>
-
-<body>
-
-<div class="container">
-  <div class="card">
-
-    <img src="https://imgur.com/AtCviVM.png" alt="Tipster B.A" class="logo">
-
-    <h1>TIPSTER B.A | FREE</h1>
-
-    <p class="subs">+2.500 SUSCRIPTORES</p>
-
-    <p class="highlight">✅ EL MEJOR CANAL DE PRONÓSTICOS ✅</p>
-
-    <h2>ÚNETE GRATIS</h2>
-
-    <div class="arrow">⬇️</div>
-
-    <a 
+    <a
       href="https://t.me/+GMz9wjnvdehkODEx"
       class="btn"
       id="joinTelegram"
