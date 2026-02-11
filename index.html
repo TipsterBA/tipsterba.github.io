@@ -2,27 +2,8 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="facebook-domain-verification" content="wbl7g9839haefanv6a0bl9ujdlosp4" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TIPSTER B.A | FREE</title>
-
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1624585545221325');
-fbq('track', 'PageView');
-</script>
-<noscript>
-<img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1624585545221325&ev=PageView&noscript=1"/>
-</noscript>
-<!-- End Meta Pixel Code -->
 
 <style>
 * {
@@ -33,9 +14,11 @@ src="https://www.facebook.com/tr?id=1624585545221325&ev=PageView&noscript=1"/>
 }
 
 body {
-  margin: 0;
   background: #cfe6a8;
-  padding: 40px 18px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
@@ -45,16 +28,11 @@ body {
 
 .card {
   background: #ffffff;
-  width: 100%
   max-width: 420px;
-  
-  margin: 0 auto;
-  padding: 55px 28px 55px;
-  
-  border-radius: 28px;
+  margin: auto;
+  padding: 30px 20px;
+  border-radius: 18px;
   text-align: center;
-  
-  box-shadow: 0 22px 45px rgba(0,0,0,0.18);  
 }
 
 .logo {
@@ -97,7 +75,6 @@ h2 {
   border-radius: 30px;
   font-size: 18px;
   font-weight: bold;
-  margin-top: 35px;
 }
 
 .btn:hover {
@@ -105,7 +82,7 @@ h2 {
 }
 
 .fallback {
-  margin-top: 22px;
+  margin-top: 18px;
   font-size: 14px;
 }
 
@@ -114,14 +91,16 @@ h2 {
   font-weight: bold;
   text-decoration: none;
 }
-  </style>
+</style>
 </head>
 
 <body>
 
+<div class="container">
   <div class="card">
 
-    <img src="https://imgur.com/AtCviVM.png" alt="Tipster B.A" class="logo">
+    <!-- Si no tienes logo, borra esta línea -->
+    <img src="logo.png" class="logo" alt="TIPSTER B.A">
 
     <h1>TIPSTER B.A | FREE</h1>
 
@@ -133,19 +112,13 @@ h2 {
 
     <div class="arrow">⬇️</div>
 
-    <a
-      href="https://t.me/+GMz9wjnvdehkODEx"
-      class="btn"
-      id="joinTelegram"
-      onclick="fbq('trackCustom', 'TelegramJoinClick')"
-      target="_blank"
-    >
+    <a class="btn" href="https://t.me/TU_LINK">
       UNIRSE AL CANAL DE TELEGRAM
     </a>
 
     <p class="fallback">
       Si el botón no te dirige al canal,
-      <a href="https://t.me/+GMz9wjnvdehkODEx" target="_blank">haz clic aquí</a>
+      <a href="https://t.me/TU_LINK">haz clic aquí</a>
     </p>
 
   </div>
